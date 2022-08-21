@@ -1,5 +1,5 @@
 # Proyecto dpsFramework-2.1
-[English](https://github.com/dpsframework/dpsFrameworkBuilder-2.1/README.md#dpsframework-21-project)
+[English](https://github.com/dpsframework/dpsFrameworkBuilder-2.1#dpsframework-21-project)
 
 ### Piezas de código del proyecto:
 
@@ -52,7 +52,7 @@ que ofrecen las aplicaciones basadas en agentes mediante**:
 1. Una demostración del proceso de colaboración versus cooperación que permiten estos agentes especializados para intercambiar hechos y reglas, así como para consultar resultados previos alcanzados y almacenados en la base de conocimientos compartida y gestionada por la aplicación.
  
 # dpsFramework-2.1 ​​project
-[Castellano](https://github.com/dpsframework/dpsFrameworkBuilder-2.1/README.md#proyecto-dpsframework-21)
+[Castellano](https://github.com/dpsframework/dpsFrameworkBuilder-2.1#proyecto-dpsframework-21)
 
 ### Project source-code:
 
