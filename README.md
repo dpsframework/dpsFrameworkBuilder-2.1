@@ -5,7 +5,7 @@
 
 1. Utilidad de instalación: **dps-framework-installer-2.1.jar**, para construir y desplegar aplicaciones basadas en agentes. 
 
-2. Librería de Java: **dps-jade-agents-2.1**, para desplegar sistemas de producción distribuidos. Esta segunda pieza de código de Java utiliza además los componentes siguientes: 
+2. Librería de Java: **dps-jade-agents-2.1.jar**, para desplegar sistemas de producción distribuidos. Esta librería utiliza además los componentes siguientes: 
 
 - La nueva versión de BeanShell para Java
 - Motores Basados-en-Reglas revisados y actualizados a 2022
@@ -53,14 +53,17 @@ que ofrecen las aplicaciones basadas en agentes mediante**:
 1. Una revisión de las capacidades de razonamiento ofrecidas por la actualización propuesta para el motor de Reglas de Java, Jess 8.0a1, compilado con versiones OpenJDK-11 o superiores de Java.
 1. Una demostración del proceso de colaboración versus cooperación que permiten estos agentes especializados para intercambiar hechos y reglas, así como para consultar resultados previos alcanzados y almacenados en la base de conocimientos compartida y gestionada por la aplicación.
  
-# dpsFramework-2.1 ​​project
+ 
+---
+
+# dpsFramework-2.1 project
 [Castellano](https://github.com/dpsframework/dpsFrameworkBuilder-2.1#proyecto-dpsframework-21)
 
 ### Project components:
 
 1. Installation utility: **dps-framework-installer-2.1.jar**, to build and deploy agent-based applications.
 
-2. Java library: **dps-jade-agents-2.1**, to deploy distributed production systems. This second piece of Java code also uses the following components:
+2. Java library: **dps-jade-agents-2.1.jar**, to deploy distributed production systems. This library also uses the following components:
 
 - The new version of BeanShell for Java
 - Rules-Based Engines revised and updated to 2022
