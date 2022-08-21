@@ -1,4 +1,5 @@
-# Proyecto dpsFramework-2.1
+# dps-Framework components
+
 [English](https://github.com/dpsframework/dpsFrameworkBuilder-2.1#dpsframework-21-project)
 
 ### Componentes de proyecto:
@@ -56,7 +57,8 @@ que ofrecen las aplicaciones basadas en agentes mediante**:
  
 ---
 
-# dpsFramework-2.1 project
+# dps-Framework components
+
 [Castellano](https://github.com/dpsframework/dpsFrameworkBuilder-2.1#proyecto-dpsframework-21)
 
 ### Project components:
