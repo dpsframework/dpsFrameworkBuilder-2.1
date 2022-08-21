@@ -1,7 +1,7 @@
 # Proyecto dpsFramework-2.1
 [English](https://github.com/dpsframework/dpsFrameworkBuilder-2.1#dpsframework-21-project)
 
-### Código-fuente del proyecto:
+### Componentes de proyecto:
 
 1. Utilidad de instalación: **dps-framework-installer-2.1.jar**, para construir y desplegar aplicaciones basadas en agentes. 
 
@@ -12,6 +12,8 @@
 - Un Editor de código con soporte para análisis de la sintáxis
 - Un Gestor de Bases de datos SQL para Java
 - La plataforma JADE versión 4.5.4 revisón 6868
+
+ 
 
 ### Los objetivos del proyecto **dpsFramework** se resumen en:
 
@@ -54,7 +56,7 @@ que ofrecen las aplicaciones basadas en agentes mediante**:
 # dpsFramework-2.1 ​​project
 [Castellano](https://github.com/dpsframework/dpsFrameworkBuilder-2.1#proyecto-dpsframework-21)
 
-### Project source-code:
+### Project components:
 
 1. Installation utility: **dps-framework-installer-2.1.jar**, to build and deploy agent-based applications.
 
