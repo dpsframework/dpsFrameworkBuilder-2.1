@@ -1,7 +1,7 @@
 # Proyecto dpsFramework-2.1
 [English](https://github.com/dpsframework/dpsFrameworkBuilder-2.1#dpsframework-21-project)
 
-### Piezas de código del proyecto:
+### Código-fuente del proyecto:
 
 1. Utilidad de instalación: **dps-framework-installer-2.1.jar**, para construir y desplegar aplicaciones basadas en agentes. 
 
