@@ -1,4 +1,4 @@
-# 1. Componentes de dpsFramework 
+# 1. Componentes de dps-Framework 
 [English](https://github.com/dpsframework/dpsframework-components#1-dps-framework-components)
 
 
