@@ -58,7 +58,11 @@ Librería de Java (artefacto): **dpsframework-agents-2.1.jar**. Permite crear nu
 
 - Descripción y funciones:
   - Los agentes de la aplicación: mantienen sus datos sobre directorios de los Nodos de aplicación. Cuando migran hacia otro Nodo, empaquetan y comprimen sus datos, se transmiten mediante la plataforma Multi-Agente y se despliegan de nuevo en el Nodo de destino.
-  - Los tipos de agentes PSAgents: permiten generar y desplegar en la plataforma Multi-Agente, a los agentes de la aplicación distribuida. Existen cuatro modelos o tipos de estos agentes. Son el tipo-Agente de Monitorización, el tipo-Agente Sistema de Produccion, el tipo-Agente Pizarra y, el tipo-Agente Escenario-de-ensayo.
+  - Los tipos de agentes PSAgents: permiten generar y desplegar en la plataforma Multi-Agente, a los agentes de la aplicación distribuida. Existen cuatro modelos o tipos de estos agentes. Son:
+  1. Agente-tipo Manager
+  2. Agente-tipo Sistema de Produccion
+  3. Agente-tipo Pizarra y
+  4. Agente-tipo Escenario-de-ensayo
 
 ### 1.2.1. Objetivos de agentes tipo **PSAgents**: 
 - Gobierno de la aplicación: 
@@ -160,8 +164,8 @@ Java library (artifact): **dpsframework-agents-2.1.jar**. It allows creating new
 - Description and functions:
    - The application agents: they keep their data on the directories of the application Nodes.
    - When PSAgents migrate to another Node, their data is packaged and compressed, transmitted through the Multi-Agent platform and deployed again on the destination Node.
-   - The types of agents PSAgents: they allow to generate and deploy in the Multi-Agent platform, the agents of the distributed application. There are four models or types of these agents. 
-   1. They are the Monitoring Agent-type
+   - The types of agents PSAgents: they allow to generate and deploy in the Multi-Agent platform, the agents of the distributed application. There are four models or types of these agents. They are:
+   1. The Manager Agent-type
    2. The Production System Agent-type
    3. The Blackboard Agent-type and
    4. The Rehearsal Stage Agent-type
