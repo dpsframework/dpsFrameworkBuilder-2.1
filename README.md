@@ -1,112 +1,189 @@
-# Componentes de dps-Framework
-
-[English](https://github.com/dpsframework/dpsframework-components#dps-framework-components)
-
-### Componentes de proyecto:
-
-1. Utilidad de instalación: **dps-framework-installer-2.1.jar**, para construir y desplegar aplicaciones basadas en agentes. 
-
-2. Librería de Java: **dps-jade-agents-2.1.jar**, para desplegar sistemas de producción distribuidos. Esta librería utiliza además los componentes siguientes: 
-
-- La nueva versión de BeanShell para Java
-- Motores Basados-en-Reglas revisados y actualizados a 2022
-- Un Editor de código con soporte para análisis de la sintáxis
-- Un Gestor de Bases de datos SQL para Java
-- La plataforma JADE versión 4.5.4 revisón 6868
-
- 
-
-### Los objetivos del proyecto **dpsFramework** se resumen en:
-
-#### **[OBJETIVO 1]: Módulo Tutor de plataforma JADE**
-
-- **Ofrecer una herramienta útil para alcanzar <br>
-un aprendizaje profundo y basado <br>
-en ejemplos de desarrollo de aplicaciones con**:
-
-1. La Plataforma JADE.
-1. Los Protocolos de Interacción fundamentales de FIPA.
-1. El ajuste y uso de las Ontologías para transmitir, no sólo el contenido sino también, la semántica en los mensajes.
-1. La incorporación progresiva de Comportamientos para la gestión y el tratamiento de los mensajes emitidos y recibidos en el Agente.
-
-####  **[OBJETIVO 2]: Aplicaciones Orientadas a Agentes dockerizadas y mavenizadas** 
-
-- **Mostrar con profundidad cómo utilizar contenedores <br>
-para desarrollar y desplegar aplicaciones <br>
-orientadas a agentes mediante**: 
-
-1. Ejemplos reales con tecnología de contenedores: cómo utilizarlos, crearlos, interconectarlos, usarlos y explotarlos.
-1. Uso de la Plataforma JADE en contenedores Docker: migración de agentes entre contenedores.
-1. Técnicas de ciclo de vida aplicadas al desarrollo de apliaciones orientadas a agentes.
+# 1. Componentes de dpsFramework 
+[English](https://github.com/dpsframework/dpsframework-components#1-dps-framework-components)
 
 
-####   **[OBJETIVO 3]: Sistemas de producción distribuidos** 
 
-- **Demostrar y documentar --con la mayor profundidad posible-- <br>
-cómo crear agentes especializados para ser conectados <br>
-a sistemas de producción**.
-- **Mostar cómo interconectar la memoria de trabajo y <br>
-la base de conocimientos de esos sistemas de producción, <br>
-para aprovechar la capacidad de cálculo distribuido <br>
-que ofrecen las aplicaciones basadas en agentes mediante**: 
+- Son los siguientes: 
+1. Constructor de nodos de la infraestructura de aplicación distribuida (**dpsframework.Builder**)
+1. Agentes JADE para gobierno de Sistemas de Producción (**dpsframework.PSAgents**)
+1. Intérprete-compilador de Java para agentes PSAgents en tiempo de ejución (**BeanShell**)
+1. Herramientas de construcción de Sistemas de Producción y sus librerías de comunicación con Java (**CLIPS**, **Jess**, etc.)
+1. Framework Java para el Desarrollo de Sistemas Multi-Agente (**JADE**)
+1. Herramientas de soporte al desarrollo y comprobación de la apalicación distribuida (**dpsframework.Utils**)
+1. Framework Java para construir aplicaciones basadas en Ontología (**Apache-JENA**)
 
-1. La creación de una documentación amplia de las capacidades incorporadas en la versión de CLIPS 6.4 de 2022.
-1. Una revisión de las capacidades de razonamiento ofrecidas por la actualización propuesta para el motor de Reglas de Java, Jess 8.0a1, compilado con versiones OpenJDK-11 o superiores de Java.
-1. Una demostración del proceso de colaboración versus cooperación que permiten estos agentes especializados para intercambiar hechos y reglas, así como para consultar resultados previos alcanzados y almacenados en la base de conocimientos compartida y gestionada por la aplicación.
- 
- 
+
+
+## 1.1. Contructor de los nodos de la infraestructura de aplicación: **dpsframework.Builder**
+
+El constructor de nodos está disponible mediante: 
+
+
+`java  -jar   dpsframework-application-builder-2.1.jar` (sólo para, Java JDK-11 o superior). 
+
+
+- Descripción y funciones:
+  - Cada nodo de la aplicación es generado por el objeto: **dpsframework.Builder**. 
+  - Los nodo de una misma aplicación comparten: el mismo nombre y un mismo identificador único.
+
+
+### 1.1.1. Objetivo del **constructor** de nodos: 
+- Generar una estructura estándard: en cada Host (Hardware), máquina virtual (VMware/VirtualBOX) o contenedor (Docker), el constructor genera los Nodos de la aplicación distribuida.
+- Migrar y desplegar de manera controlada: un Nodo es una estructura de directorios reconocida por los Agentes de una misma aplicación, hacia donde es posible migrar y desplegarse para obtener los recursos de la máquina (Host).
+- Aportar seguridad y control: el constructor incorpora a todos los nodos de una misma aplicación distribuida, un mecanismo de verificación que se comprueba en cada comunicación entre Agentes.
+
+
+
+
+### 1.1.2. Objetivo de la **aplicación distribuida**:
+1. Gobernar un Sistema de Producción: la aplicación distribuida gestiona y gobierna mediante sus agenetes PSAgents, la ejecución, parada y coordinación de sistema de producción a distribuir.
+1. Coordinar memorias de trabajo y hechos: la aplicación distribuida  ---mediante tecnología de los sistemas Multi-Agentes--- permite realizar el despligue y la interconexión de las memorias de trabajo, de las distintas activaciones de reglas en las agendas y, la re-alimentación de nuevos hechos desde los nodos hacias los agentes de la aplicación.
+
+
+
+
+
+
+
+
+
+
+
+
+
+## 1.2. Agentes JADE para gobierno de Sistemas de Producción (**dpsframework.PSAgents**)
+
+Librería de Java (artefacto): **dpsframework-agents-2.1.jar**. Permite crear nuevos Agentes de JADE con capacidad para desplegar sistemas de producción distribuidos. Esta librería utiliza además los componentes siguientes: 
+
+
+- Descripción y funciones:
+  - Los agentes de la aplicación: mantienen sus datos sobre directorios de los Nodos de aplicación. Cuando migran hacia otro Nodo, empaquetan y comprimen sus datos, se transmiten mediante la plataforma Multi-Agente y se despliegan de nuevo en el Nodo de destino.
+  - Los tipos de agentes PSAgents: permiten generar y desplegar en la plataforma Multi-Agente, a los agentes de la aplicación distribuida. Existen cuatro modelos o tipos de estos agentes. Son el tipo-Agente de Monitorización, el tipo-Agente Sistema de Produccion, el tipo-Agente Pizarra y, el tipo-Agente Escenario-de-ensayo.
+
+### 1.2.1. Objetivos de agentes tipo **PSAgents**: 
+- Gobierno de la aplicación: 
+- Facilitar la administración de la aplicación: 
+- Desplegar el Sistema de Producción: 
+- Facilitar las pruebas funcionales: 
+
+
+
+
+## 1.3. Intérprete-compilador de Java para agentes PSAgents en tiempo de ejución (**BeanShell**)
+
+
+## 1.4. Herramientas de construcción de Sistemas de Producción y sus librerías de comunicación con Java (**CLIPS**, **Jess**, etc.)
+
+
+## 1.5. Framework Java para el Desarrollo de Sistemas Multi-Agente (**JADE**)
+
+
+## 1.6. Herramientas de soporte al desarrollo y comprobación de la apalicación distribuida (**dpsframework.Utils**)
+
+
+## 1.7. Framework Java para construir aplicaciones basadas en Ontología (**Apache-JENA**)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ---
 
-# dps-Framework components
-
-[Castellano](https://github.com/dpsframework/dpsframework-components#componentes-de-dps-framework)
-
-### Project components:
-
-1. Installation utility: **dps-framework-installer-2.1.jar**, to build and deploy agent-based applications.
-
-2. Java library: **dps-jade-agents-2.1.jar**, to deploy distributed production systems. This library also uses the following components:
-
-- The new version of BeanShell for Java
-- Rules-Based Engines revised and updated to 2022
-- A Code Editor with support for syntax analysis
-- An SQL Database Manager for Java
-- The JADE platform version 4.5.4 revision 6868
-
-### The objectives of the project **dpsFramework** are summarized in:
-
-#### **[OBJECTIVE 1]: JADE-Platform Tutor Module**
-
-- **Offer a useful tool to reach <br>
-a deep and based learning <br>
-in application development examples with**:
-
-1. The JADE Platform.
-1. The fundamental FIPA Interaction Protocols.
-1. The adjustment and use of Ontologies to transmit, not only the content but also the semantics in the messages.
-1. The progressive incorporation of Behaviors for the management and treatment of messages sent and received in the Agent.
-
-#### **[OBJECTIVE 2]: Dockerized and mavenized Agent Oriented Applications**
-
-- **Show in depth how to use containers <br>
-to develop and deploy applications <br>
-agent-oriented by**:
-
-1. Real examples with container technology: how to use them, create them, interconnect them, use them and exploit them.
-1. Use of the JADE Platform in Docker containers: migration of agents between containers.
-1. Life cycle techniques applied to the development of agent-oriented applications.
+# 1. dps-Framework components
+[Castellano](https://github.com/dpsframework/dpsframework-components#1-componentes-de-dpsframework)
 
 
-#### **[OBJECTIVE 3]: Distributed production systems**
 
-- **Demonstrate and document --with as much depth as possible-- <br>
-how to create specialized agents to be connected <br>
-to production systems**.
-- **Show how to interface working memory and <br>
-the knowledge base of those production systems, <br>
-to take advantage of distributed computing power <br>
-offered by agent-based applications through**:
+- They are the following:
+1. Distributed Application Framework Node Builder (**dpsframework.Builder**)
+1. JADE Agents for Production Systems governance (**dpsframework.PSAgents**)
+1. Java interpreter-compiler for PSAgents at runtime (**BeanShell**)
+1. Production Systems construction tools and their communication libraries with Java (**CLIPS**, **Jess**, etc.)
+1. Java Framework for Multi-Agent Systems Development (**JADE**)
+1. Support tools for the development and verification of the distributed application (**dpsframework.Utils**)
+1. Java Framework to build applications based on Ontology (**Apache-JENA**)
 
-1. The creation of an extensive documentation of the capabilities incorporated in the CLIPS 6.4 version of 2022.
-1. A review of the reasoning capabilities offered by the proposed update to the Java Rules engine, Jess 8.0a1, compiled with OpenJDK-11 or higher versions of Java.
-1. A demonstration of the collaboration versus cooperation process that these specialized agents allow to exchange facts and rules, as well as to consult previous results reached and stored in the knowledge base shared and managed by the application.
+
+
+## 1.1. Application framework node builder: **dpsframework.Builder**
+
+The node constructor is available via:
+
+
+`java -jar dpsframework-application-builder-2.1.jar` (only for Java, JDK-11 or higher).
+
+
+- Description and functions:
+  - Each application node is generated by the object: **dpsframework.Builder**.
+  - The nodes of the same application share: the same name and the same unique identifier.
+
+
+### 1.1.1. Objective of the **constructor** of nodes:
+- Generate a standard structure: in each Host (Hardware), virtual machine (VMware/VirtualBOX) or container (Docker), the constructor generates the Nodes of the distributed application.
+- Migrate and deploy in a controlled manner: a Node is a directory structure recognized by the Agents of the same application, to which it is possible to migrate and deploy to obtain the resources of the machine (Host).
+- Provide security and control: the constructor incorporates a verification mechanism to all the nodes of the same distributed application, which is checked in each communication between Agents.
+
+
+
+
+### 1.1.2. Objective of the **distributed application**:
+1. Govern a Production System: the distributed application manages and governs, through its PSAgents, the execution, stoppage and coordination of the production system to be distributed.
+1. Coordinate work memories and events: the distributed application ---using Multi-Agent systems technology--- allows for the deployment and interconnection of work memories, of the different rule activations in agendas and, the feedback of new facts from the nodes to the agents of the application.
+
+
+
+
+
+
+
+
+
+
+
+
+
+## 1.2. JADE Agents for Production Systems governance (**dpsframework.PSAgents**)
+
+Java library (artifact): **dpsframework-agents-2.1.jar**. It allows creating new JADE Agents with the capacity to deploy distributed production systems. This library also uses the following components:
+
+
+- Description and functions:
+  - The application agents: they keep their data on the directories of the application Nodes. When they migrate to another Node, their data is packaged and compressed, transmitted through the Multi-Agent platform, and deployed back to the destination Node.
+  - The types of agents PSAgents: they allow to generate and deploy in the Multi-Agent platform, the agents of the distributed application. There are four models or types of these agents. They are the Monitoring Agent-type, the Production System Agent-type, the Blackboard Agent-type, and the Test-Scenario Agent-type.
+
+### 1.2.1. Objectives of agents type **PSAgents**:
+- Application governance:
+- Facilitate the administration of the application:
+- Deploy the Production System:
+- Facilitate functional tests:
+
+
+
+
+## 1.3. Java interpreter-compiler for PSAgents at runtime (**BeanShell**)
+
+
+## 1.4. Construction tools for Production Systems and their communication libraries with Java (**CLIPS**, **Jess**, etc.)
+
+
+## 1.5. Java Framework for Multi-Agent Systems Development (**JADE**)
+
+
+## 1.6. Distributed application development and testing support tools (**dpsframework.Utils**)
+
+
+## 1.7. Java Framework to build applications based on Ontology (**Apache-JENA**)
+
+## 1.2. JADE Agents for deployment and management of Production Systems: **dpsframework.PSAgent**
