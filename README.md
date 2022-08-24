@@ -14,7 +14,7 @@
 
 
 
-## 1.1. Contructor de los nodos de la infraestructura de aplicación: **dpsframework.Builder**
+## 1.1. Contructor de los nodos de la infraestructura de aplicación: (**dpsframework.Builder**)
 
 El constructor de nodos está disponible mediante: 
 
@@ -124,7 +124,7 @@ Librería de Java (artefacto): **dpsframework-agents-2.1.jar**. Permite crear nu
 
 
 
-## 1.1. Application framework node builder: **dpsframework.Builder**
+## 1.1. Application framework node builder: (**dpsframework.Builder**)
 
 The node constructor is available via:
 
