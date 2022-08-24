@@ -1,5 +1,5 @@
 # 1. Componentes de dps-Framework 
-[English](https://github.com/dpsframework/dpsframework-components#1-dps-framework-components)
+[**English**](https://github.com/dpsframework/dpsframework-components#1-dps-framework-components)
 
 
 
@@ -106,7 +106,7 @@ Librería de Java (artefacto): **dpsframework-agents-2.1.jar**. Permite crear nu
 ---
 
 # 1. dps-Framework components
-[Castellano](https://github.com/dpsframework/dpsframework-components#1-componentes-de-dps-framework)
+[**Castellano**](https://github.com/dpsframework/dpsframework-components#1-componentes-de-dps-framework)
 
 - They are the following:
 1. (**dpsframework.Builder**) Distributed Application Infrastructure Node Builder
