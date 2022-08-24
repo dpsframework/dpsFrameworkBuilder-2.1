@@ -4,13 +4,13 @@
 
 
 - Son los siguientes: 
-1. Constructor de nodos de la infraestructura de aplicación distribuida (**dpsframework.Builder**)
-1. Agentes JADE para gobierno de Sistemas de Producción (**dpsframework.PSAgents**)
-1. Intérprete-compilador de Java para agentes PSAgents en tiempo de ejución (**BeanShell**)
-1. Herramientas de construcción de Sistemas de Producción y sus librerías de comunicación con Java (**CLIPS**, **Jess**, etc.)
-1. Framework Java para el Desarrollo de Sistemas Multi-Agente (**JADE**)
-1. Herramientas de soporte al desarrollo y comprobación de la apalicación distribuida (**dpsframework.Utils**)
-1. Framework Java para construir aplicaciones basadas en Ontología (**Apache-JENA**)
+1. (**dpsframework.Builder**) Constructor de nodos de la infraestructura de aplicación distribuida 
+1. (**dpsframework.PSAgents**) Agentes JADE para gobierno de Sistemas de Producción 
+1. (**BeanShell**) Intérprete-compilador de Java para agentes PSAgents en tiempo de ejución 
+1. (**CLIPS**, **Jess**, etc.) Herramientas de construcción de Sistemas de Producción y sus librerías de comunicación con Java 
+1. (**JADE**) Framework Java para el Desarrollo de Sistemas Multi-Agente 
+1. (**dpsframework.Utils**) Herramientas de soporte al desarrollo y comprobación de la apalicación distribuida 
+1. (**Apache-JENA**) Framework Java para construir aplicaciones basadas en Ontología 
 
 
 
@@ -108,19 +108,14 @@ Librería de Java (artefacto): **dpsframework-agents-2.1.jar**. Permite crear nu
 # 1. dps-Framework components
 [Castellano](https://github.com/dpsframework/dpsframework-components#1-componentes-de-dpsframework)
 
-
 - They are the following:
-1. Distributed Application Framework Node Builder (**dpsframework.Builder**)
-1. JADE Agents for Production Systems governance (**dpsframework.PSAgents**)
-1. Java interpreter-compiler for PSAgents at runtime (**BeanShell**)
-1. Production Systems construction tools and their communication libraries with Java (**CLIPS**, **Jess**, etc.)
-1. Java Framework for Multi-Agent Systems Development (**JADE**)
-1. Distributed application development and testing tools (**dpsframework.Utils**)
-1. Java framework to build ontology-based applications (**Apache-JENA**)
-
-
-
-
+1. (**dpsframework.Builder**) Distributed Application Infrastructure Node Builder
+1. (**dpsframework.PSAgents**) JADE Agents for Production Systems governance
+1. (**BeanShell**) Java interpreter-compiler for PSAgents at runtime
+1. (**CLIPS**, **Jess**, etc.) Production Systems construction tools and their communication libraries with Java
+1. (**JADE**) Java Framework for Multi-Agent Systems Development
+1. (**dpsframework.Utils**) Distributed application testing and support tools
+1. (**Apache-JENA**) Java Framework to build Ontology-based applications
 
 
 
