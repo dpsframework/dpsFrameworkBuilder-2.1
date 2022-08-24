@@ -10,7 +10,7 @@
 1. (**CLIPS**, **Jess**, etc.) Herramientas de construcción de Sistemas de Producción y sus librerías Java 
 1. (**JADE**) Framework Java para el Desarrollo de Sistemas Multi-Agente 
 1. (**dpsframework.Utils**) Herramientas de soporte al desarrollo y comprobación de la apalicación distribuida 
-1. (**Apache-JENA**) Framework Java para construir aplicaciones basadas en Ontología 
+1. (**Apache-JENA**) Framework Java para construir aplicaciones basadas en Ontologías 
 
 
 
