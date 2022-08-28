@@ -9,11 +9,11 @@
 
 1. (**dpsFramework-installer-2.1.jar**) Creador de nodos de la aplicación para desplegar en (Host, Container o VBox).
 1. (**dpsAgents-2.1.jar**) Agentes de JADE para gobierno de Sistemas de Producción. 
-1. (**dpsDevelopment-2.1.jar**) Scripts para soporte al desarrollo y la comprobación de los nodos de la aplicación. 
+1. (**dpsDevelopment-2.1.jar**) Scripts para soporte al desarrollo, la depuración de agentes y la comprobación de los nodos de la aplicación. 
 
 - La versión 2.1, del proyecto dpsFramework utiliza:
 
-1. (**BeanShell-2.1**) Intérprete y compilador de Java en tiempo de ejecución para loas agentes typo PSAgent.
+1. (**BeanShell-2.1**) Intérprete y compilador de Java en tiempo de ejecución para loas agentes tipo PSAgent.
 1. (**CLIPS-6.40b**, **Jess-8.0b1**) Herramientas de construcción de Sistemas de Producción y sus librerías Java (actualizados a Java-11 a 18).
 1. (**Plataforma JADE**) Framework Java para el Desarrollo de Sistemas Multi-Agente versión 4.5.4 r6868, Julio 2022.
 1. (**Apache-JENA**) Framework Java para construir aplicaciones basadas en Ontologías 
@@ -126,7 +126,7 @@ Librería de Java (artefacto): **dpsframework-agents-2.1.jar**. Permite crear nu
 
 1. (**dpsFramework-installer-2.1.jar**) Application node builder to deploy to (Host, Container or VBox).
 1. (**dpsAgents-2.1.jar**) JADE Agents for Production Systems governance.
-1. (**dpsDevelopment-2.1.jar**) Scripts to support the development and debugging of the application nodes and their agents.
+1. (**dpsDevelopment-2.1.jar**) Scripts to support the development, agent debugging and testing of the application nodes.
 
 - Version 2.1, of the dpsFramework project uses:
 
