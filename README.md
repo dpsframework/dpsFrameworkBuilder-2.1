@@ -4,10 +4,15 @@
 
 >  NOTA: La liberación de la versión 2.1 está prevista antes de finalizar el 2022.
 
-**Fig.1.** This is an agent GUI at runtime in debug mode: a Shell to write, test and develop with the JADE API. 
+**Figura-1.** Interface gráfica de un agente (antigua versión _**dpsAgents-1.8**_) en tiempo de ejecución y en modo-depuración. En este modo, el agente presenta una GUI al actor-humano para facilitar la escritura, desarrollo y depuración utilizando la Shell de (BeanShell 2.1) y la API de JADE (JADE-4.5.4).<br>
+
 ![](images/next-dpsAgents-a.png)
 
-**Fig.2.** The agent in the Figure above, in the same Shell, but managing its integrated expert system through CLIPS Java API commands.
+
+<br><br><br>
+
+**Figura-2.** The mismo agente de la **Figura 1.** pero, accediendo y gestionando el sistema experto mediante la API de CLIPS-6.40 (2021) con sentencias en Java.<br>
+
 ![](images/next-dpsAgents-b.png) 
 
 
@@ -127,11 +132,26 @@ Librería de Java (artefacto): **dpsframework-agents-2.1.jar**. Permite crear nu
 
 > NOTE: The release of version 2.1 is planned before the end of 2022.
 
-**Fig.1.** This is an agent GUI at runtime in debug mode: a Shell to write, test and develop with the JADE API. 
+
+
+
+**Fig.1.** This is an agent GUI (dpsAgents-1.8 old-fashion release) at runtime in debug mode. It shows its Shell (BeanShell 2.1) to write, test and develop with the JADE (JADE-4.5.4) API.
+
+
 ![](images/next-dpsAgents-a.png)
 
-**Fig.2.** The agent in the Figure above, in the same Shell, but managing its integrated expert system through CLIPS Java API commands.
+
+<br><br>
+
+**Fig.2.** The agent in the Figure above, in the same Shell, but managing its integrated expert system through CLIPS-6.40 (2021) Java API commands.
+
+
 ![](images/next-dpsAgents-b.png) 
+
+
+
+
+
 
 
 - Version 2.1 of the project provides the following artifacts:
