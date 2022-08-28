@@ -126,7 +126,7 @@ Librería de Java (artefacto): **dpsframework-agents-2.1.jar**. Permite crear nu
 ---
 
 # 1. dpsFramework-2.1
-[**Castellano**](https://github.com/dpsframework/dpsframework-2.1#1-dps-framework-21)
+[**Castellano**](https://github.com/dpsframework/dpsframework-2.1#1-dpsframework-21)
 
 
 
@@ -135,11 +135,11 @@ Librería de Java (artefacto): **dpsframework-agents-2.1.jar**. Permite crear nu
 
 
 
+
+
 **Fig.1.** This is an agent GUI (dpsAgents-1.8 old-fashion release) at runtime in debug mode. It shows its Shell (BeanShell 2.1) to write, test and develop with the JADE (JADE-4.5.4) API.
 
-
 ![](images/next-dpsAgents-a.png)
-
 
 <br><br>
 
