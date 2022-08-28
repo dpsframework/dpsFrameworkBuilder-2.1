@@ -4,6 +4,12 @@
 
 >  NOTA: La liberación de la versión 2.1 está prevista antes de finalizar el 2022.
 
+**Fig.1.** This is an agent GUI at runtime in debug mode: a Shell to write, test and develop with the JADE API. 
+![](images/next-dpsAgents-a.png)
+
+**Fig.2.** The agent in the Figure above, in the same Shell, but managing its integrated expert system through CLIPS Java API commands.
+![](images/next-dpsAgents-b.png) 
+
 
 - La versión 2.1 del proyecto aporta los siguientes artefactos: 
 
@@ -120,6 +126,12 @@ Librería de Java (artefacto): **dpsframework-agents-2.1.jar**. Permite crear nu
 
 
 > NOTE: The release of version 2.1 is planned before the end of 2022.
+
+**Fig.1.** This is an agent GUI at runtime in debug mode: a Shell to write, test and develop with the JADE API. 
+![](images/next-dpsAgents-a.png)
+
+**Fig.2.** The agent in the Figure above, in the same Shell, but managing its integrated expert system through CLIPS Java API commands.
+![](images/next-dpsAgents-b.png) 
 
 
 - Version 2.1 of the project provides the following artifacts:
