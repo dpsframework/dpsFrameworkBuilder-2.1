@@ -1,0 +1,8 @@
+Main-Class: dpsframework.NodeBuilder
+
+Name: dpsframework-installer
+Specification-Version: 2.1
+SVN-Revision: 1914
+SVN-Date: 28-08-2022
+SVN-Author: Aguayo-Canela, FJ
+SVN-Source: https://github.com/dpsframework/dpsframework-2.1
