@@ -125,7 +125,7 @@ Librería de Java (artefacto): **dpsframework-agents-2.1.jar**. Permite crear nu
 
 ---
 
-# 1. dpsFramework-2.1
+# 1. dpsFrameworkBuilder-2.1
 [**Castellano**](https://github.com/dpsframework/dpsframework-2.1#1-dpsframeworkbuilder-21)
 
 
