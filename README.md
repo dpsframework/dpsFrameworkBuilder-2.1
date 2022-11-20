@@ -1,5 +1,5 @@
-# 1. dpsFramework-2.1
-[**English**](https://github.com/dpsframework/dpsframework-2.1#1-dpsframework-21-1)
+# 1. dpsFrameworkBuilder-2.1
+[**English**](https://github.com/dpsframework/dpsframework-2.1#1-dpsframeworkbuilder-21-1)
 
 
 >  NOTA: La liberación de la versión 2.1 está prevista antes de finalizar el 2022.
@@ -126,7 +126,7 @@ Librería de Java (artefacto): **dpsframework-agents-2.1.jar**. Permite crear nu
 ---
 
 # 1. dpsFramework-2.1
-[**Castellano**](https://github.com/dpsframework/dpsframework-2.1#1-dpsframework-21)
+[**Castellano**](https://github.com/dpsframework/dpsframework-2.1#1-dpsframeworkbuilder-21)
 
 
 
